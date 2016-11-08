@@ -1,6 +1,6 @@
 loadScript("http://code.jquery.com/jquery-1.11.0.min.js", afterJquery);
 function afterJquery(){
-	loadScript("http://github.com/augustotmw/doEmailMarketingAdjusts/emkt.js", null);
+	loadScript("https://cdn.rawgit.com/augustotmw/doEmailMarketingAdjusts/master/emkt.js", null);
 }
 function loadScript(src, callback){
 	var s,r,t;

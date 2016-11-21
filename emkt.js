@@ -29,7 +29,8 @@ $(function(){
 		}
 	});
 	//apply align = center to table
-	$("body > table").attr("align","center");
+	var tabela = $("body > table");
+	tabela.attr("align","center").css({borderCollapse:'collapse', border: 0, borderSpacing:0, width: tabela.attr('width')}).removeAttr('height');
 	$('body > table td').attr('valign','top');
 	$('body').prepend('\n <div style="padding: 15px; display: table; width: auto; margin: 0 auto; text-align: center;">Se você não estiver visualizando a mensagem corretamente, <a href="" target="_blank">acesse esse link</a>.</div>');
 	$("html").append('<input type="button" value="Copiar" id="btCopy" />');

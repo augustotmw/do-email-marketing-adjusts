@@ -28,6 +28,10 @@ $(function(){
 			$this.parents('td').html($this.html());
 		}
 	});
+	//remove spacer.gif images?
+	if(confirm("Do you want to remove all \"spacer.gif\"s images?")) {
+		$('body img[src*="spacer.gif"]').parent().empty();
+	}
 	//apply align = center to table
 	var tabela = $("body > table");
 	tabela.attr("align","center").css({borderCollapse:'collapse', border: 0, borderSpacing:0, width: tabela.attr('width')}).removeAttr('height');
